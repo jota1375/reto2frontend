@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reto_2</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+
+</head>
+
+<body class="container_body">
+    
+
+    <header class="header">
+        <img class="header__img" src="./css/img/—Pngtree—3d instagram home acylic comments_6275285.png" alt="logo de finca">
+
+        <h1>Alquiler de fincas.com</h1>
+    </header>
+
+<section>
+    <div class="container_caja_creacion">
+        <h2 class="titulo_Creacion"> Creacion de Fincas </h2>
+
+            <div class="container_section_creacion">
+                <div class="caja_consultar">
+                    
+                    <div id="resultado"></div>
+
+                        <section class="button_Consultar" >
+                            <button onclick="traerInformacion()"> Consultar </button>
+                        </section>
+
+                </div>
+                <div class="placeholder_box">
+                    <input type="number" id="id" placeholder="id">
+                    <input type="text" id="address" placeholder="address">
+                    <input type="number" id="exension" placeholder="exension">
+                    <input type="number" id="category_id" placeholder="category_id">
+                    <input type="text" id="name" placeholder="name">
+                </div>
+
+                <section class="buttons_guardar">
+                    <button onclick="guardarInformacion()">Guardar!</button>
+                    <button onclick="editarInformacion()">Actualizar!</button>
+                </section>
+            </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container_caja_creacion">
+        <h2 class="titulo_Creacion"> Registro de Clientes </h2>
+
+        <div class="container_section_creacion">
+            <div class="caja_consultar">
+
+                <div id="resultado2"></div>
+
+                <section class="button_Consultar" >
+                    <button onclick="consultarClientes()"> Consultar </button>
+                </section>
+
+            </div>
+
+            <div class="placeholder_box">
+                <input type="number" id="idCliente" placeholder="id">
+                <input type="text" id="nameCliente" placeholder="name">
+                <input type="text" id="emailCliente" placeholder="email">
+                <input type="number" id="ageCliente" placeholder="age">
+            </div>
+    
+            <button onclick="guardarClientes()">Guardar!</button>
+            <button onclick="editarCliente()">Actualizar!</button>
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container_caja_creacion">
+        <h2 class="titulo_Creacion"> Registro de Mensajes </h2>
+        
+        <div class="container_section_creacion">
+            <div class="caja_consultar">
+        
+                <div id="resultado3"></div>
+
+                <section class="button_Consultar" >
+                    <button onclick="ConsultarMensaje()"> Consultar </button>
+                </section>
+
+            </div>
+
+                <div class="placeholder_box">
+                    <input type="number" id="idMensaje" placeholder="id">
+                    <input type="text" id="menssageText" placeholder="mensaje">
+                </div>
+        
+                <button onclick="guardarMensaje()">Guardar!</button>
+                <button onclick="editarMensaje()">Actualizar!</button>
+        </div>
+    </div>
+</section>       
+        
+    </body>
+
+</html>
